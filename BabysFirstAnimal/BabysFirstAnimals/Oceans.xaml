@@ -1,0 +1,25 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="WaveMachine.Oceans"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    xmlns:my="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Width="480" Height="768">
+        <Image x:Name="BackgroundImage" Width="480" Height="768" Source="Assets/Hit.png"></Image>
+
+        <StackPanel HorizontalAlignment="Center"  Width="480">
+            <my:AdControl AdUnitId="10069326" ApplicationId="9159b9a0-d8a7-4588-a88c-a09ad25c9327" Height="80" Name="adControl1" Width="480" />
+        </StackPanel>
+    </Grid>
+
+</phone:PhoneApplicationPage>
