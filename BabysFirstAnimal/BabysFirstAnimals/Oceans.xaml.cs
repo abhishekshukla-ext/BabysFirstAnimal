@@ -93,9 +93,7 @@ namespace WaveMachine
                     _accelerometer.Start();
                 }
                 catch (AccelerometerFailedException exception)
-                {
-
-                }
+                { }
             }
         }
     }
